@@ -8,28 +8,110 @@
 
     </head>
     <body>
-        <section>
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="experiments.html">Experiments</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </section>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="experiments.html">Experiments</a></li>
+                </ul>
+            </nav>
+            <h1>
+                Experiments Page
+            </h1>
+        </header>
 
-        <section>
-            <canvas id="testCanvas">
-                The browser does not support the canvas tag.
-            </canvas>
+        <main>
+            <section>
+                <h2>Iframe testing</h2>
+                <iframe src="https://www.ucsd.edu" width="800" height="800"></iframe>
+            </section>
 
-            <script>
-                canvas = document.getElementById("testCanvas");
-                drawing = canvas.getContext("2d");
-                drawing.fillStyle = "#FF0000";
-                drawing.fillRect(0,0,150,75);
-            </script>
-        </section>
+            <section>
+                <h2>Audio testing</h2>
+                <audio src="discordsound.mp3" controls>
+                    Your browser does not support audio.
+                </audio>
+            </section>
+
+            <section>
+                <h2>Video testing</h2>
+                <video src="canon.mp4" controls>
+                    Your browser does not support video.
+                </video>
+            </section>
+
+            <section>
+                <h2>SVG image testing</h2>
+                <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="50" width="200" height="140" fill="blue"/>
+                </svg>
+            </section>
+
+            <section>
+                <h2>Datalist testing</h2>
+                <label for="browsers">What browser are you using?</label>
+                <input type="text" id="browsers" list="tech">
+                <datalist id="tech">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Safari"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </section>
+
+            <section>
+                <h2>Template testing</h2>
+                <template id="test-template">
+                    <p>This content shouldn't display</p>
+                </template>
+            </section>
+
+            <section>
+                <h2>Table testing</h2>
+                <table>
+                    <caption>Types of Food</caption>
+                    <colgroup>
+                        <col span="3" style="background-color: yellow">
+                    </colgroup>
+                    <tr>
+                        <th>Fruits</th>
+                        <th>Vegetables</th>
+                        <th>Candy</th>
+                    </tr>
+                    <tr>
+                        <td>Apples</td>
+                        <td>Broccoli</td>
+                        <td>Chocolate</td>
+                    </tr>
+                    <tr>
+                        <td>Oranges</td>
+                        <td>Carrots</td>
+                        <td>Candy Corn</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Figure testing</h2>
+                <figure>
+                    <img src="dog.jpg" alt="Picture of my dog">
+                    <figcaption>My super cute dog</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Canvas testing</h2>
+                <canvas id="testCanvas">
+                    The browser does not support the canvas tag.
+                </canvas>
+
+                <script>
+                    canvas = document.getElementById("testCanvas");
+                    drawing = canvas.getContext("2d");
+                    drawing.fillStyle = "#FF0000";
+                    drawing.fillRect(0,0,150,75);
+                </script>
+            </section>
+        </main>
     </body>
 </html>

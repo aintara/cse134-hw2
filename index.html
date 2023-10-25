@@ -27,9 +27,10 @@
         <main>
             <section>
                 <h1>About Me</h1>
+
                 <p>Hello! I am a 4th year student at UCSD majoring in Computer Engineering. I'm passionate about working with others
-                to develop <i>client-focused</i> solutions, with a particular focus on performance optimizations. I'm <b>always</b> eager to learn more
-                and <b>constantly</b> looking to improve my skills.
+                to develop <i>client-focused</i> solutions, with a particular focus on performance optimizations. My favorite languages are <code>Java</code> and 
+                <code>C++</code>. I'm <b>always</b> eager to learn more and <b>constantly</b> looking to improve my skills.
                 </p>
 
 
@@ -39,11 +40,25 @@
 
                 <div><br></div>
 
-                <aside>I also <span><strong>really</strong></span> like <em>dogs</em></aside>
+                <aside><pre>I also <span><strong>really <em>really</em></strong></span> like dogs</pre></aside>
+                <picture>
+                    <source media="(min-width: 450px)" srcset="dog.jpg">
+                    <img src="smalldog.jpg" alt="A picture of my dog">
+                </picture>
             </section>
 
             <section>
-                <h2>Project A</h2>
+                <h2>Social Compass</h2>
+                <p>As a group of six, I helped develop a social compass android app using Java. The app allowed users to add their friends or family on the app, letting them
+                see each other on the app on a compass with cardinal directions that moved along with the phone's gyroscope. The app also let them see how far they were from one another.
+                I primarily contributed to the backend algorithms for calculating the distance between the user and landmarks or other people, as well as pulling their locations 
+                from a shared server. I also helped to determine where the visuals representing these people on the screen depending on their relative distances should land.</p>
+                <details>
+                    <summary>Purpose</summary>
+                    <p>The Social Compass was designed around the idea that if a user was curious where their friends were in class or how far their family were, they could
+                    open up their phone and easily see which direction they should head in to meet them.</p>
+                </details>
+
             </section>
 
             <section>
@@ -55,9 +70,35 @@
             </section>
 
             <section>
-                <h2>Contact Me</h2>
-
+                <h2>Get In Touch</h2>
+                <form action="process-form.php" method="POST">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="phone" placeholder="Phone Number">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <label for="contact">Preferred Contact Method:</label>
+                        <select id="contact" name="Preferred Contact Method">
+                            <optgroup label="Preferred Contact Method">
+                                <option value="email">E-mail</option>
+                                <option value="phone">Phone</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Any Comments?</legend>
+                        <textarea name="message" rows="4" cols="50">Let me know!</textarea>
+                    </fieldset>
+                    <button type="button">Submit</button>
+                </form>
                 <h3>Other Links</h3>
+                <ol>
+                    <li>Email: aintara@ucsd.edu</li>
+                    <li><a href="https://www.linkedin.com/in/alex-intara-b54b38221">Linkedin</a></li>
+                </ol>
             </section>
         </main>
 
