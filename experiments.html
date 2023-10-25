@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Web Experiments</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <section>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="experiments.html">Experiments</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section>
+            <canvas id="testCanvas">
+                The browser does not support the canvas tag.
+            </canvas>
+
+            <script>
+                canvas = document.getElementById("testCanvas");
+                drawing = canvas.getContext("2d");
+                drawing.fillStyle = "#FF0000";
+                drawing.fillRect(0,0,150,75);
+            </script>
+        </section>
+    </body>
+</html>
